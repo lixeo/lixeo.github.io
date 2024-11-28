@@ -54,7 +54,7 @@ function tonav() {
     position = scroll;
   });
   //修复没有弄右键菜单的童鞋无法回顶部的问题
-  document.getElementById("page-name").innerText = document.title.split(" | Fomalhaut🥝")[0];
+  document.getElementById("page-name").innerText = document.title.split(" | LixHui🐾")[0];
 }
 
 function scrollToTop() {
@@ -73,7 +73,7 @@ $.ajax({
   type: 'get',
   url: 'https://apis.map.qq.com/ws/location/v1/ip',
   data: {
-    key: '',  // 这里要写你的KEY!!!
+    key: 'N6OBZ-Q6R6Z-F5LXL-756UT-3BV5V-4KB4E',  // 这里要写你的KEY!!!
     output: 'jsonp',
   },
   dataType: 'jsonp',
@@ -99,7 +99,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-  let dist = getDistance(113.34499552, 23.15537143, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+  let dist = getDistance(112.7994967, 28.1850089, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
   let pos = ipLoacation.result.ad_info.nation;
   let ip;
   let posdesc;
@@ -1119,21 +1119,22 @@ function createtime1() {
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
-    `Future is now 🍭🍭🍭`,
+    `欢迎来到LixHui🐾の小家!`,
+    `Live in the moment 🐟🐟🐟`,
     `
         
-███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ 
-██      ██    ██ ████  ████ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-█████   ██    ██ ██ ████ ██ ███████ ██      ███████ ███████ ██    ██    ██    
-██      ██    ██ ██  ██  ██ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-██       ██████  ██      ██ ██   ██ ███████ ██   ██ ██   ██  ██████     ██   
+██╗     ██╗██╗  ██╗██╗  ██╗██╗   ██╗██╗
+██║     ██║╚██╗██╔╝██║  ██║██║   ██║██║
+██║     ██║ ╚███╔╝ ███████║██║   ██║██║
+██║     ██║ ██╔██╗ ██╔══██║██║   ██║██║
+███████╗██║██╔╝ ██╗██║  ██║╚██████╔╝██║
+╚══════╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝
                                               
 `,
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2022 By Fomalhaut",
+    "©2023 By LixHui",
   ];
 
   setTimeout(
@@ -1172,7 +1173,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
+      "%c ⚡ Powered by LixHui🐾 %c 你正在访问LixHui🐾の小家",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -1282,8 +1283,8 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('Fomalhaut🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+    var subTitle = title.endsWith("| LixHui🐾") ? title.substring(0, title.length - 14) : title;
+    navigator.clipboard.writeText('LixHui🐾的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
     new Vue({
       data: function () {
         this.$notify({
@@ -2785,11 +2786,11 @@ var now = new Date();
 function createtime() {
   // 当前时间
   now.setTime(now.getTime() + 1000);
-  var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间
+  var start = new Date("11/20/2024 00:00:00"); // 旅行者1号开始计算的时间
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
   // 网站诞生时间
-  var grt = new Date("08/09/2022 00:00:00");
+  var grt = new Date("11/20/2024 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,
@@ -2804,8 +2805,8 @@ function createtime() {
   let currentTimeHtml = "";
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<img class='boardsign' src='https://img.shields.io/badge/%F0%9F%8D%80LixHui-%E5%9C%A8%E7%BA%BF%E6%91%B8%E9%B1%BC%E4%B8%AD%F0%9F%90%9F-blue?style=social' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<img class='boardsign' src='https://img.shields.io/badge/%F0%9F%8D%B0LixHui-%E4%B8%8B%E7%8F%AD%E4%BC%91%E6%81%AF%E5%95%A6%F0%9F%90%BE-blue?style=social' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
@@ -2847,17 +2848,17 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
     if (now > 1000 + lastTime) {
       var fps = Math.round((frame * 1000) / (now - lastTime));
       if (fps <= 5) {
-        var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`
+        var kd = `<span style="color:#bd0000">卡成PPT啦🧊</span>`
       } else if (fps <= 15) {
-        var kd = `<span style="color:red">电竞级帧率😖</span>`
+        var kd = `<span style="color:red">电竞级帧率🥕</span>`
       } else if (fps <= 25) {
-        var kd = `<span style="color:orange">有点难受😨</span>`
+        var kd = `<span style="color:orange">有点难受🍍</span>`
       } else if (fps < 35) {
-        var kd = `<span style="color:#9338e6">不太流畅🙄</span>`
+        var kd = `<span style="color:#9338e6">不太流畅🍋</span>`
       } else if (fps <= 45) {
-        var kd = `<span style="color:#08b7e4">还不错哦😁</span>`
+        var kd = `<span style="color:#08b7e4">还不错哦🍉</span>`
       } else {
-        var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`
+        var kd = `<span style="color:#39c5bb">十分流畅🐋</span>`
       }
       document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;
       frame = 0;
@@ -3174,10 +3175,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(http://lixhui.novicexk.top/bg2.png);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://76ef43e.webp.li/bg4.png);
+    --darkmode-bg:url(https://76ef43e.webp.li/bg5.png);
+    --mobileday-bg: url(https://76ef43e.webp.li/bg3.png);
+    --mobilenight-bg: url(https://76ef43e.webp.li/bg3.png);
   }`;
 }
 // 切换背景主函数
@@ -3378,12 +3379,7 @@ function createWinbox() {
 <div class="note warning modern"><p>非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，如有侵权请联系站长删除，谢谢！ —— 致版权方</p>
 </div>
 <p id="swfs">
-<a class="swf" id="swf_ZhuZiAWan" href="javascript:;" rel="noopener external nofollow" style="font-family:'ZhuZiAWan'!important;color:black" onclick="setFont('ZhuZiAWan')">筑紫A丸标准体2.0</a>
-<a class="swf" id="swf_HYTMR" href="javascript:;" rel="noopener external nofollow" style="font-family:'HYTMR'!important;color:black" onclick="setFont('HYTMR')">汉仪唐美人</a>
 <a class="swf" id="swf_LXGW" href="javascript:;" rel="noopener external nofollow" style="font-family:'LXGW'!important;color:black" onclick="setFont('LXGW')">霞鹜文楷</a>
-<a class="swf" id="swf_TTQHB" href="javascript:;" rel="noopener external nofollow" style="font-family:'TTQHB'!important;color:black" onclick="setFont('TTQHB')">甜甜圈海报</a>
-<a class="swf" id="swf_YSHST" href="javascript:;" rel="noopener external nofollow" style="font-family:'YSHST'!important;color:black" onclick="setFont('YSHST')">优设好身体</a>
-<a class="swf" id="swf_MiSans" href="javascript:;" rel="noopener external nofollow" style="font-family:'MiSans'!important;color:black" onclick="setFont('MiSans')">MiSans</a>
 <a class="swf" id="swf_default" href="javascript:;" rel="noopener external nofollow" style="font-family:-apple-system, IBM Plex Mono ,monosapce,'微软雅黑', sans-serif;!important;color:black" onclick="setFont('default')">系统默认</a>
 </p>
 
@@ -3407,7 +3403,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg3.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg3.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg6.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg6.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg1.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg1.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg16.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg16.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg12.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg12.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg14.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg14.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg2.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg2.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg13.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg13.png)')"></a></div>
               </div>
             </details>
 
@@ -3416,7 +3412,7 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看风景背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg9.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg9.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg8.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg8.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg7.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg7.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg5.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg5.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg10.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg10.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg11.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg11.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg13.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg13.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://76ef43e.webp.li/bg4.png)" class="imgbox" onclick="changeBg('url(https://76ef43e.webp.li/bg4.png)')"></a></div>
               </div>
             </details>
 
