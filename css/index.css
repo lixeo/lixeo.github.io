@@ -7739,7 +7739,7 @@ input#pic-link {
 
 /* heo 加载动画头像 */
 .loading-img {
-  background: url(https://76ef43e.webp.li/t3.jpg)
+  background: url(/images/t3.jpg)
     no-repeat center center;
   background-size: cover;
 }
