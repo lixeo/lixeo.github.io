@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://lixeo.github.io/life/movies/index.html</loc>
+    <loc>https://lixeo.github.io/life/games/index.html</loc>
     
     <lastmod>2026-05-17</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://lixeo.github.io/life/games/index.html</loc>
+    <loc>https://lixeo.github.io/life/movies/index.html</loc>
     
     <lastmod>2026-05-17</lastmod>
     
@@ -182,20 +182,6 @@
 
   
   <url>
-    <loc>https://lixeo.github.io/tags/Java/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://lixeo.github.io/tags/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://lixeo.github.io/tags/Markdown/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -209,17 +195,31 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://lixeo.github.io/categories/Java%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://lixeo.github.io/tags/Java/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
+    <loc>https://lixeo.github.io/tags/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
     <loc>https://lixeo.github.io/categories/%E6%BC%94%E7%A4%BA/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lixeo.github.io/categories/Java%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
